@@ -31,6 +31,10 @@ function setup()
 function draw() 
 {
   background(51);
+  if(keyCode === UP_ARROW)
+  {
+    key();
+  }
   ground.display();
   ground2.display();
   ground3.display();
@@ -40,10 +44,10 @@ function draw()
  
    
 }
-function keyPressed(){ 
-  if (keyCode === UP_ARROW){
+function key(){ 
+
    Matter.Body.applyForce(fruit,{x:0,y:0},{x:0,y:-0.06});
-  }
+
  }
 
 
