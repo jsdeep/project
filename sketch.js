@@ -33,7 +33,7 @@ function draw()
   background(51);
   if(keyCode === UP_ARROW)
   {
-    key();
+    js();
   }
   ground.display();
   ground2.display();
@@ -44,7 +44,7 @@ function draw()
  
    
 }
-function key(){ 
+function js(){ 
 
    Matter.Body.applyForce(fruit,{x:0,y:0},{x:0,y:-0.06});
 
